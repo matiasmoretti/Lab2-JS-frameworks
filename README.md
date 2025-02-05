@@ -12,6 +12,7 @@ This project demonstrates the use of **Node.js** with **custom ES modules**. It 
 
 ## 🔍 Code Examples
 
+```
 import * as myUtilities from './utilities.js';
 
 console.log(myUtilities);
@@ -39,3 +40,4 @@ let passwordSize = 14
 let pass = myUtilities.passwordGenerator(passwordSize);
 console.log(`Your new password with size ${passwordSize} is ${pass}!`);
 // Output: Your new password with size 14 is O@6T2q)6q@#Ug2!
+```
