@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "name": "lab2-js-frameworks",
+  "version": "1.0.0",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Burak Berkay Bayazit, Matias da Silva Moretti and Raphael Haus Zaneti",
+  "license": "ISC",
+  "description": "Lab Assignment 2 project Group16"
+}
+
