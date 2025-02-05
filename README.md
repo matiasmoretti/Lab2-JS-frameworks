@@ -10,27 +10,32 @@ This project demonstrates the use of **Node.js** with **custom ES modules**. It 
 - **Password Generator:** Creates a secure random password of a specified length.  
 
 
-##🔍 Code Examples
+## 🔍 Code Examples
 
-**Greet User Function**
-import { greetUser } from './utils.js';
-greetUser('Matias', 'Toronto');
-// Output: Hello Matias from Toronto! Hope you’re having an awesome day!
+import * as myUtilities from './utilities.js';
 
-**Convert Kilometers to Miles**
-import { convertKilometersToMiles } from './utils.js';
-const miles = convertKilometersToMiles(10);
-console.log(`10 kilometers is equal to ${miles} miles.`);
-// Output: 10 kilometers is equal to 6.21 miles.
+console.log(myUtilities);
 
-**Calculate Circle Area**
-import { calculateCircleArea } from './utils.js';
-const area = calculateCircleArea(5);
-console.log(`The area of a circle with radius 5 is ${area} square units.`);
-// Output: The area of a circle with radius 5 is 78.54 square units.
+// Hello Message Function
+let name = "Matias";
+let city = "Toronto"
+myUtilities.helloMessage(name,city);
+// Output: Hello Matias from Toronto! Have a wonderful day!
 
-**Generate Random Password**
-import { generateRandomPassword } from './utils.js';
-const password = generateRandomPassword(12);
-console.log(`Your secure password is: ${password}`);
-// Output: Your secure password is: Ab7#d9Gh!Lm2 (Example output)
+// Calculate Circle Area Function
+let circleRad = 10;
+let circleArea = myUtilities.circleArea(circleRad);
+console.log(`The area of a circle with radius ${circleRad} is ${circleArea}!`);
+// Output: The area of a circle with radius 10 is 314.16!
+
+// Convert Kilometers to Miles Function
+let kms = 1000 
+let miles = myUtilities.km2miles(kms);
+console.log(`${kms} kilometers is equal to ${miles} miles!`);
+// Output: 1000 kilometers is equal to 621.37 miles! 
+
+// Generate Random Password Function
+let passwordSize = 14 
+let pass = myUtilities.passwordGenerator(passwordSize);
+console.log(`Your new password with size ${passwordSize} is ${pass}!`);
+// Output: Your new password with size 14 is O@6T2q)6q@#Ug2!
